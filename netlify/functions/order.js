@@ -21,7 +21,7 @@ exports.handler = async function handler(event) {
   try {
     const payload = JSON.parse(event.body || "{}");
     const order = prepareOrder(payload);
-    await sendOrderEmail(order);
+    await sendOrderEmail(order, process.env.ORDER_TO_EMAIL);
     return response(200, { ok: true });
   } catch (error) {
     const clientError = /incomplètes|panier|article|volumineuse|JSON/.test(error.message);

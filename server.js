@@ -6,7 +6,6 @@ const catalog = require("./catalog.js");
 const ROOT = __dirname;
 const PORT = Number(process.env.PORT) || 4173;
 const HOST = process.env.HOST || "0.0.0.0";
-const ORDER_TO_EMAIL = "sara.khenine@gmail.com";
 const MAX_BODY_SIZE = 64 * 1024;
 const catalogById = new Map(catalog.map((product) => [product.id, product]));
 
@@ -116,10 +115,10 @@ function buildEmail(order) {
   return { text, html };
 }
 
-async function sendOrderEmail(order) {
+async function sendOrderEmail(order, recipient = process.env.ORDER_TO_EMAIL) {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.ORDER_FROM_EMAIL;
-  if (!apiKey || !from) {
+  if (!apiKey || !from || !recipient) {
     throw new Error("La configuration email du serveur est incomplète.");
   }
   const email = buildEmail(order);
@@ -131,7 +130,7 @@ async function sendOrderEmail(order) {
     },
     body: JSON.stringify({
       from,
-      to: [ORDER_TO_EMAIL],
+      to: [recipient],
       subject: "Nouvelle commande SK Accessoires",
       text: email.text,
       html: email.html,
@@ -157,7 +156,7 @@ async function handleOrder(request, response) {
   try {
     const payload = await readJsonBody(request);
     const order = prepareOrder(payload);
-    await sendOrderEmail(order);
+    await sendOrderEmail(order, process.env.ORDER_TO_EMAIL);
     json(response, 200, { ok: true });
   } catch (error) {
     const clientError = /incomplètes|panier|article|volumineuse|JSON/.test(error.message);

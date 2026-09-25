@@ -15,7 +15,7 @@ const spaRule = config.indexOf('from = "/*"');
 assert.ok(apiRule >= 0, "Missing /api/order rewrite");
 assert.ok(spaRule > apiRule, "SPA fallback must come after the order API rewrite");
 
-for (const file of ["index.html", "styles.css", "script.js", "catalog.js", "logo.jpeg", "perle/1.jpeg"]) {
+for (const file of ["index.html", "styles.css", "script.js", "catalog.js", "logo.jpeg", "9.jpeg", "perle/1.jpeg"]) {
   assert.ok(fs.existsSync(path.join(dist, file)), `Missing public build file: ${file}`);
 }
 

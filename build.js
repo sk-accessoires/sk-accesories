@@ -17,6 +17,7 @@ const files = [
   "6.jpeg",
   "7.jpeg",
   "8.jpg",
+  "9.jpeg",
 ];
 
 if (path.dirname(output) !== root || path.basename(output) !== "dist") {
