@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "node build.js",
     "start": "node server.js",
-    "check": "node --check catalog.js && node --check script.js && node --check server.js",
-    "test": "node --test"
+    "check": "node --check catalog.js && node --check script.js && node --check server.js && node --check build.js && node --check netlify/functions/order.js",
+    "test": "node --test",
+    "verify:netlify": "npm run build && node verify-netlify.js"
   }
 }

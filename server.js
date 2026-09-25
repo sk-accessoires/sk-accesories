@@ -210,4 +210,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildEmail, prepareOrder, server };
+module.exports = { buildEmail, prepareOrder, sendOrderEmail, server };
