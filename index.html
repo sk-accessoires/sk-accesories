@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK Accessoires | Bijoux en acier inoxydable en Tunisie</title>
+    <meta
+      name="description"
+      content="Découvrez SK Accessoires, une sélection de bijoux en acier inoxydable élégants et raffinés en Tunisie. Commandez facilement vos pièces préférées."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="16" fill="%23fbf4e8"/%3E%3Ccircle cx="32" cy="32" r="24" fill="none" stroke="%23b2762f" stroke-width="2"/%3E%3Ctext x="32" y="40" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="%23733f17"%3ESK%3C/text%3E%3C/svg%3E'
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand-mark" href="#accueil" aria-label="SK Accessoires">
+        <img src="logo.jpeg" alt="Logo SK Accessoires" />
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" data-nav aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#collection">Collection</a>
+        <a href="#perles">Perles</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-cta cart-nav-button" type="button" data-open-cart>
+          Panier <span class="cart-count" data-cart-count>0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-reveal" id="accueil">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-ornament" aria-hidden="true">
+            <svg viewBox="0 0 240 112" role="presentation">
+              <path d="M14 72C55 27 91 30 120 56C149 82 185 85 226 40" />
+              <path d="M36 86C73 55 98 55 120 70C142 85 167 84 204 57" />
+              <text x="120" y="53">SK</text>
+              <path class="sparkle" d="M190 20V34M183 27H197M52 34V44M47 39H57" />
+            </svg>
+          </div>
+          <p class="eyebrow">Bijoux en acier inoxydable</p>
+          <h1>L'élégance dans chaque détail</h1>
+          <p class="hero-copy">Des pièces choisies avec soin pour révéler votre style avec douceur, caractère et féminité.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#collection">Découvrir la collection</a>
+            <a class="button ghost" href="#perles">Voir les perles</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection section-pad" id="collection">
+        <div class="section-heading section-reveal">
+          <p class="eyebrow">Notre collection</p>
+          <h2>Découvrez la collection</h2>
+          <p>Des accessoires élégants à commander simplement, avec des détails soignés et une présence discrètement précieuse.</p>
+        </div>
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="perles section-pad section-reveal" id="perles">
+        <div class="perles-layout">
+          <div class="perles-media">
+            <img src="perle/1.jpeg" alt="Bracelets de perles colorées SK Accessoires" loading="lazy" />
+          </div>
+          <div class="perles-copy">
+            <p class="eyebrow">Les Perles SK</p>
+            <h2>Perles pour bracelets</h2>
+            <p>
+              Des bracelets perlés lumineux, faciles à porter seuls ou en accumulation selon votre humeur et votre style.
+            </p>
+            <div class="size-list" aria-label="Prix des perles par taille">
+              <button type="button" data-add-product="perles-grande">
+                <span>Grande taille</span>
+                <strong>5 DT</strong>
+              </button>
+              <button type="button" data-add-product="perles-moyenne">
+                <span>Taille moyenne</span>
+                <strong>5 DT</strong>
+              </button>
+              <button type="button" data-add-product="perles-petite">
+                <span>Petite taille</span>
+                <strong>4 DT</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section-pad section-reveal">
+        <div class="benefit">
+          <span>01</span>
+          <h3>Sélection soignée</h3>
+          <p>Des accessoires choisis avec attention pour leur style, leur éclat et leur facilité à porter.</p>
+        </div>
+        <div class="benefit">
+          <span>02</span>
+          <h3>Style & élégance</h3>
+          <p>Des pièces pensées pour compléter chaque look sans surcharge, avec une touche raffinée.</p>
+        </div>
+        <div class="benefit">
+          <span>03</span>
+          <h3>Commande facile</h3>
+          <p>Choisissez votre pièce, indiquez la quantité et préparez votre message de commande en quelques secondes.</p>
+        </div>
+      </section>
+
+      <section class="about section-pad section-reveal" id="apropos">
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2>Notre signature</h2>
+        </div>
+        <p>
+          SK Accessoires vous propose une sélection d'accessoires raffinés et tendance, choisis pour apporter une touche
+          d'élégance à votre quotidien. Chaque pièce est pensée pour compléter votre style avec simplicité, caractère et féminité.
+        </p>
+      </section>
+
+      <section class="contact section-pad section-reveal" id="contact">
+        <div class="contact-panel">
+          <p class="eyebrow">Commander / Contact</p>
+          <h2>Une pièce vous plaît ?</h2>
+          <p>Sélectionnez un produit dans la collection ou contactez SK Accessoires pour finaliser votre commande.</p>
+          <div class="contact-actions">
+            <button class="button primary" type="button" data-open-cart>Voir le panier</button>
+            <a class="button ghost social-link" href="#" data-social="instagram">Instagram</a>
+            <a class="button ghost social-link" href="#" data-social="facebook">Facebook</a>
+            <a class="button ghost social-link" href="#" data-social="whatsapp">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="logo.jpeg" alt="Logo SK Accessoires" />
+        <p>Ton accessoire, ton éclat.</p>
+      </div>
+      <nav aria-label="Navigation du pied de page">
+        <a href="#accueil">Accueil</a>
+        <a href="#collection">Collection</a>
+        <a href="#perles">Perles</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">© 2026 SK Accessoires. Tous droits réservés.</p>
+    </footer>
+
+    <div class="modal-shell" data-product-modal aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="product-modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <button class="modal-close" type="button" aria-label="Fermer" data-close-modal>×</button>
+        <div class="gallery">
+          <img class="gallery-main" src="" alt="" data-gallery-main />
+          <div class="gallery-thumbs" data-gallery-thumbs></div>
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow">Détail produit</p>
+          <h2 id="product-modal-title" data-modal-name></h2>
+          <p class="modal-price" data-modal-price></p>
+          <p class="material-line" data-modal-material></p>
+          <p data-modal-description></p>
+          <div class="modal-actions">
+            <button class="button primary" type="button" data-modal-add>Ajouter au panier</button>
+            <button class="button ghost" type="button" data-close-modal>Continuer ma visite</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="modal-shell" data-cart-modal aria-hidden="true">
+      <div class="modal-backdrop" data-close-cart></div>
+      <section class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <button class="modal-close" type="button" aria-label="Fermer" data-close-cart>×</button>
+
+        <div data-cart-panel>
+          <p class="eyebrow">Votre sélection</p>
+          <h2 id="cart-title">Panier</h2>
+          <p class="cart-empty" data-cart-empty>Votre panier est vide.</p>
+          <div class="cart-items" data-cart-items></div>
+          <div class="cart-footer" data-cart-footer hidden>
+            <div class="cart-total"><span>Total</span><strong data-cart-total>0 DT</strong></div>
+            <button class="button primary full" type="button" data-start-checkout>Finaliser la commande</button>
+          </div>
+        </div>
+
+        <div data-checkout-panel hidden>
+          <button class="text-button" type="button" data-back-cart>← Retour au panier</button>
+          <p class="eyebrow">Finaliser la commande</p>
+          <h2>Vos coordonnées</h2>
+          <form class="checkout-form" data-checkout-form>
+            <label>
+              <span class="field-label">Nom <b aria-hidden="true">*</b></span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span class="field-label">Téléphone <b aria-hidden="true">*</b></span>
+              <input type="tel" name="phone" autocomplete="tel" required />
+            </label>
+            <label>
+              <span class="field-label">Adresse <b aria-hidden="true">*</b></span>
+              <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+            </label>
+            <label>
+              Message facultatif
+              <textarea name="message" rows="3"></textarea>
+            </label>
+
+            <div class="checkout-summary">
+              <h3>Récapitulatif de la commande</h3>
+              <div data-checkout-summary></div>
+              <div class="cart-total"><span>Total</span><strong data-checkout-total>0 DT</strong></div>
+            </div>
+            <p class="form-error" data-order-error role="alert" hidden>
+              Une erreur est survenue lors de l'envoi de votre commande. Veuillez réessayer.
+            </p>
+            <button class="button primary full" type="submit" data-confirm-order>Confirmer la commande</button>
+          </form>
+        </div>
+
+        <div class="order-success" data-success-panel hidden>
+          <p class="eyebrow">Commande confirmée</p>
+          <h2>Commande envoyée avec succès</h2>
+          <p>Merci pour votre commande. SK Accessoires vous contactera prochainement pour la confirmation.</p>
+          <button class="button primary" type="button" data-close-cart>Continuer ma visite</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="catalog.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
